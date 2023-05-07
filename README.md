@@ -81,5 +81,41 @@ The first Shell script runs once during machine startup and continues running in
 
 The second Bash script comprises the Hive Dimensions script, the Hive Facts, and the Dashboard script. This script is added to the Linux Cron Jobs file and runs every five minutes, ensuring that the data in the HDFS, Hive tables, and Dashboards are up-to-date.
 
+## Graphical View of Hive Tables
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/46838441/236668826-13da1285-f709-45a0-9549-2bf016eb87db.png">
+</p>
+
+**Hive Dimensions Tables**
+
+- ***1- tweet_data_raw:***
+This Hive dimension table contains information related to tweets, including `tweet ID`, `author ID`, `tweet text`, `hashtags list`, `retweet count`, `reply count`, `like count`, `quote count`, `impression count`, `language`, `tweet date`, `who can reply` which represents the reply applied settings on the tweet, `media IDs`, `tweet location`, `edit history IDs`.
+
+The partition information columns such as `year`, `month`, `day`, and `hour` are used for efficient querying and data retrieval. 
+
+This table can be used to analyze and gain insights into Twitter user behavior and engagement.
+
+- ***2- user_data_raw:***
+This Hive dimension table contains information about Twitter users, such as their `user ID`, `username`, `name`, `profile description`, `location`, `profile image`, and other related metadata.
+
+It also includes various statistics about their account, such as `follower count`, `following count`, `tweet count`, and `listed count`.
+
+Additionally, there is a column for `user popularity`, which is calculated based on their social media activity. so if the user has more than 5K followers the popularity will be 'High' and if he has between 2K and 5K it will be 'Middle' and if he has less than 2K it'll be 'Low'.
+
+The table is partitioned by `year`, `month`, `day`, and `hour`.
+
+- ***3- place_data_raw:***
+
+This Hive dimension table that contains information about the locations of the tweets. The columns include the `place ID`, `name`, `full name`, `country`, `country code`, and `type`. 
+
+The table is partitioned by `year`, `month`, `day`, and `hour`.
+
+- ***4- media_data_raw:***
+
+This Hive dimension table contains information about the media uploaded in the tweets. The columns include `media_id` and `media_type`.
+
+The table is partitioned by `year`, `month`, `day`, and `hour`.
+
 
 
