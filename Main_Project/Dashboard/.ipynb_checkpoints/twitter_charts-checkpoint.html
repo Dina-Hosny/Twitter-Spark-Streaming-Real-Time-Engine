@@ -1,0 +1,85 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Twitter Charts</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.3.3.min.js" integrity="sha384-dM3QQsP+wXdHg42wTqW85BjZQdLNNIXqlPw/BgKoExPmTG7ZLML4EGqLMfqHT6ON" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="64fa7e0a-8979-4536-bd0e-1c9d7efbfcf7" data-root-id="1762"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="2144">
+          {"d5441ede-bbed-4c37-b43d-82a5a2c5ca99":{"defs":[],"roots":{"references":[{"attributes":{},"id":"1661","type":"DataRange1d"},{"attributes":{},"id":"1709","type":"CategoricalTicker"},{"attributes":{"toolbar":{"id":"1760"},"toolbar_location":"above"},"id":"1761","type":"ToolbarBox"},{"attributes":{},"id":"1663","type":"CategoricalScale"},{"attributes":{"axis":{"id":"1708"},"ticker":null},"id":"1710","type":"Grid"},{"attributes":{},"id":"1665","type":"LinearScale"},{"attributes":{"formatter":{"id":"1751"},"major_label_policy":{"id":"1750"},"ticker":{"id":"1712"}},"id":"1711","type":"LinearAxis"},{"attributes":{"toolbars":[{"id":"1681"},{"id":"1722"}],"tools":[{"id":"1674"},{"id":"1675"},{"id":"1676"},{"id":"1677"},{"id":"1678"},{"id":"1679"},{"id":"1694"},{"id":"1715"},{"id":"1716"},{"id":"1717"},{"id":"1718"},{"id":"1719"},{"id":"1720"},{"id":"1735"}]},"id":"1760","type":"ProxyToolbar"},{"attributes":{},"id":"1712","type":"BasicTicker"},{"attributes":{"axis":{"id":"1711"},"dimension":1,"ticker":null},"id":"1714","type":"Grid"},{"attributes":{"axis":{"id":"1670"},"dimension":1,"ticker":null},"id":"1673","type":"Grid"},{"attributes":{},"id":"1756","type":"UnionRenderers"},{"attributes":{},"id":"1671","type":"BasicTicker"},{"attributes":{},"id":"1750","type":"AllLabels"},{"attributes":{"axis":{"id":"1667"},"ticker":null},"id":"1669","type":"Grid"},{"attributes":{},"id":"1715","type":"PanTool"},{"attributes":{"formatter":{"id":"1740"},"major_label_policy":{"id":"1739"},"ticker":{"id":"1671"}},"id":"1670","type":"LinearAxis"},{"attributes":{},"id":"1716","type":"WheelZoomTool"},{"attributes":{"overlay":{"id":"1721"}},"id":"1717","type":"BoxZoomTool"},{"attributes":{},"id":"1668","type":"CategoricalTicker"},{"attributes":{},"id":"1718","type":"SaveTool"},{"attributes":{"formatter":{"id":"1743"},"major_label_policy":{"id":"1742"},"ticker":{"id":"1668"}},"id":"1667","type":"CategoricalAxis"},{"attributes":{},"id":"1719","type":"ResetTool"},{"attributes":{"factors":["#NBA","#JordanNeely","#TigrayGenocide","#grindfacetv","#technology","#AI","#Bitcoin","#bugbounty","#California","#naturalgas"]},"id":"1659","type":"FactorRange"},{"attributes":{},"id":"1720","type":"HelpTool"},{"attributes":{},"id":"1740","type":"BasicTickFormatter"},{"attributes":{"active_multi":null,"tools":[{"id":"1715"},{"id":"1716"},{"id":"1717"},{"id":"1718"},{"id":"1719"},{"id":"1720"},{"id":"1735"}]},"id":"1722","type":"Toolbar"},{"attributes":{"callback":null,"tooltips":[["Hashtag","@hashtag"],["Count","@count"]]},"id":"1694","type":"HoverTool"},{"attributes":{},"id":"1757","type":"Selection"},{"attributes":{"below":[{"id":"1667"}],"center":[{"id":"1669"},{"id":"1673"}],"height":500,"left":[{"id":"1670"}],"renderers":[{"id":"1692"}],"title":{"id":"1657"},"toolbar":{"id":"1681"},"toolbar_location":null,"width":1000,"x_range":{"id":"1659"},"x_scale":{"id":"1663"},"y_range":{"id":"1661"},"y_scale":{"id":"1665"}},"id":"1656","subtype":"Figure","type":"Plot"},{"attributes":{"callback":null,"tooltips":[["Username","@username"],["Follower Count","@followers_count"]]},"id":"1735","type":"HoverTool"},{"attributes":{"text":"Top 10 Popular Users Based on Follower Count"},"id":"1698","type":"Title"},{"attributes":{},"id":"1754","type":"CategoricalTickFormatter"},{"attributes":{},"id":"1742","type":"AllLabels"},{"attributes":{},"id":"1739","type":"AllLabels"},{"attributes":{},"id":"1677","type":"SaveTool"},{"attributes":{"text":"Top 10 Hashtags and Their Counts"},"id":"1657","type":"Title"},{"attributes":{"bottom_units":"screen","fill_alpha":0.5,"fill_color":"lightgrey","left_units":"screen","level":"overlay","line_alpha":1.0,"line_color":"black","line_dash":[4,4],"line_width":2,"right_units":"screen","syncable":false,"top_units":"screen"},"id":"1721","type":"BoxAnnotation"},{"attributes":{"children":[[{"id":"1656"},0,0],[{"id":"1697"},1,0]]},"id":"1759","type":"GridBox"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"field":"username","transform":{"id":"1729"}},"line_alpha":{"value":0.1},"line_color":{"value":"white"},"top":{"field":"followers_count"},"width":{"value":0.9},"x":{"field":"username"}},"id":"1732","type":"VBar"},{"attributes":{"overlay":{"id":"1680"}},"id":"1676","type":"BoxZoomTool"},{"attributes":{"factors":["#NBA","#JordanNeely","#TigrayGenocide","#grindfacetv","#technology","#AI","#Bitcoin","#bugbounty","#California","#naturalgas"],"palette":["#5e4fa2","#3288bd","#66c2a5","#abdda4","#e6f598","#fee08b","#fdae61","#f46d43","#d53e4f","#9e0142"]},"id":"1688","type":"CategoricalColorMapper"},{"attributes":{},"id":"1678","type":"ResetTool"},{"attributes":{"fill_color":{"field":"username","transform":{"id":"1729"}},"line_color":{"value":"white"},"top":{"field":"followers_count"},"width":{"value":0.9},"x":{"field":"username"}},"id":"1731","type":"VBar"},{"attributes":{"data_source":{"id":"1696"},"glyph":{"id":"1731"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1732"},"view":{"id":"1734"}},"id":"1733","type":"GlyphRenderer"},{"attributes":{},"id":"1675","type":"WheelZoomTool"},{"attributes":{},"id":"1674","type":"PanTool"},{"attributes":{"active_multi":null,"tools":[{"id":"1674"},{"id":"1675"},{"id":"1676"},{"id":"1677"},{"id":"1678"},{"id":"1679"},{"id":"1694"}]},"id":"1681","type":"Toolbar"},{"attributes":{"children":[{"id":"1761"},{"id":"1759"}]},"id":"1762","type":"Column"},{"attributes":{"source":{"id":"1696"}},"id":"1734","type":"CDSView"},{"attributes":{"data":{"count":[103,100,78,50,48,47,25,24,23,22],"hashtag":["#NBA","#JordanNeely","#TigrayGenocide","#grindfacetv","#technology","#AI","#Bitcoin","#bugbounty","#California","#naturalgas"],"index":[0,1,2,3,4,5,6,7,8,9]},"selected":{"id":"1746"},"selection_policy":{"id":"1745"}},"id":"1655","type":"ColumnDataSource"},{"attributes":{},"id":"1679","type":"HelpTool"},{"attributes":{"bottom_units":"screen","fill_alpha":0.5,"fill_color":"lightgrey","left_units":"screen","level":"overlay","line_alpha":1.0,"line_color":"black","line_dash":[4,4],"line_width":2,"right_units":"screen","syncable":false,"top_units":"screen"},"id":"1680","type":"BoxAnnotation"},{"attributes":{"data_source":{"id":"1655"},"glyph":{"id":"1690"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1691"},"view":{"id":"1693"}},"id":"1692","type":"GlyphRenderer"},{"attributes":{"fill_color":{"field":"hashtag","transform":{"id":"1688"}},"line_color":{"value":"white"},"top":{"field":"count"},"width":{"value":0.9},"x":{"field":"hashtag"}},"id":"1690","type":"VBar"},{"attributes":{"source":{"id":"1655"}},"id":"1693","type":"CDSView"},{"attributes":{"formatter":{"id":"1754"},"major_label_policy":{"id":"1753"},"ticker":{"id":"1709"}},"id":"1708","type":"CategoricalAxis"},{"attributes":{},"id":"1704","type":"CategoricalScale"},{"attributes":{},"id":"1753","type":"AllLabels"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"field":"hashtag","transform":{"id":"1688"}},"line_alpha":{"value":0.1},"line_color":{"value":"white"},"top":{"field":"count"},"width":{"value":0.9},"x":{"field":"hashtag"}},"id":"1691","type":"VBar"},{"attributes":{"data":{"day":{"__ndarray__":"BAAAAAQAAAAEAAAAAwAAAAUAAAAEAAAAAwAAAA==","dtype":"int32","order":"little","shape":[7]},"followers_count":["996","993","99","99","99","9869","98498"],"following_count":["94","727","652","143","467","2554","2879"],"hour":{"__ndarray__":"FwAAABcAAAAXAAAAFwAAABcAAAAXAAAAFwAAAA==","dtype":"int32","order":"little","shape":[7]},"index":[0,1,4,5,6,7,9],"listed_count":["0","11","0","0","1","329","1130"],"location":["On Air","NaN","NaN","NaN","NaN","Seattle, Washington, USA","NaN"],"month":{"__ndarray__":"BQAAAAUAAAAFAAAABQAAAAUAAAAFAAAABQAAAA==","dtype":"int32","order":"little","shape":[7]},"name":["Stacy Herbert \ud83c\uddf8\ud83c\uddfb\ud83d\ude80","LordWotton|RIOT Pool|Cardano Ambassador","Diana","Luchy Ayala","most","Seattle Public Utilities","Nearpod"],"pinned_tweet_id":["NaN","NaN","NaN","NaN","554960368150519808","1594823209081503745","1650977053741658112"],"profile_creation_date":["2011-07-10T10:29:02.000Z","2015-03-27T02:43:00.000Z","2010-11-23T05:45:27.000Z","2022-08-20T14:58:49.000Z","2012-12-09T05:21:17.000Z","2009-11-25T17:12:19.000Z","2010-12-27T20:28:15.000Z"],"profile_description":["Fairy godmother \ud83e\uddda\u200d\u2640\ufe0f- Volcano Blonde \ud83c\udf0b - #Bitcoin","#CardanoAmbassador, Crypto investor, and #cardano stake pool operator: RIOT ticker  PGP Fingerprint: 62FC CBBC 1CE9 9605 C7D0  7538 6A90 287F 5764 15B2","Public Relations Professional | Graduate student \ud83e\udd13 | Lover of books\ud83d\udcda","","0x","Former check mark. Not monitored 24/7. Customer Service 206-684-3000. SPU ORC 206-386-1800. Emergencies\ud83d\udcde 911.","Engaging media and formative assessments to make every lesson interactive. You'll wonder how you taught without it! Share your experiences with #Nearpod."],"profile_image":["https://pbs.twimg.com/profile_images/1654278872488132609/9rrPLOUI_normal.jpg","https://pbs.twimg.com/profile_images/1254473238425600007/W6g-b8xn_normal.jpg","https://pbs.twimg.com/profile_images/1598910491862204416/gr2oJM2d_normal.jpg","https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png","https://pbs.twimg.com/profile_images/1631292306497126403/MBvU4uKc_normal.jpg","https://pbs.twimg.com/profile_images/1252295211532775433/tV6Ubdp7_normal.jpg","https://pbs.twimg.com/profile_images/1630972696828989440/uo7X25aT_normal.jpg"],"protected":["false","false","false","false","false","false","false"],"tweet_count":["129","1813","788","20003","1914","10287","45326"],"user_id":["332746795","3120425783","218760734","1561004768755011587","998636929","92566416","231176302"],"user_popularity":["Low","Low","Low","Low","Low","High","High"],"username":["StacyHer1bert","LordWotton83","ki_diana_b","Ayala1Luchy","most_ooo","SeattleSPU","nearpod"],"verfied":["false","true","false","false","false","false","true"],"year":{"__ndarray__":"5wcAAOcHAADnBwAA5wcAAOcHAADnBwAA5wcAAA==","dtype":"int32","order":"little","shape":[7]}},"selected":{"id":"1757"},"selection_policy":{"id":"1756"}},"id":"1696","type":"ColumnDataSource"},{"attributes":{},"id":"1745","type":"UnionRenderers"},{"attributes":{"factors":["StacyHer1bert","LordWotton83","ki_diana_b","Ayala1Luchy","most_ooo","SeattleSPU","nearpod"],"palette":["#5e4fa2","#3288bd","#66c2a5","#abdda4","#e6f598","#fee08b","#fdae61","#f46d43","#d53e4f","#9e0142"]},"id":"1729","type":"CategoricalColorMapper"},{"attributes":{},"id":"1743","type":"CategoricalTickFormatter"},{"attributes":{},"id":"1706","type":"LinearScale"},{"attributes":{},"id":"1751","type":"BasicTickFormatter"},{"attributes":{"below":[{"id":"1708"}],"center":[{"id":"1710"},{"id":"1714"}],"height":500,"left":[{"id":"1711"}],"renderers":[{"id":"1733"}],"title":{"id":"1698"},"toolbar":{"id":"1722"},"toolbar_location":null,"width":1000,"x_range":{"id":"1700"},"x_scale":{"id":"1704"},"y_range":{"id":"1702"},"y_scale":{"id":"1706"}},"id":"1697","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"1746","type":"Selection"},{"attributes":{"factors":["StacyHer1bert","LordWotton83","ki_diana_b","Ayala1Luchy","most_ooo","SeattleSPU","nearpod"]},"id":"1700","type":"FactorRange"},{"attributes":{},"id":"1702","type":"DataRange1d"}],"root_ids":["1762"]},"title":"Bokeh Application","version":"2.3.3"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('2144').textContent;
+                  var render_items = [{"docid":"d5441ede-bbed-4c37-b43d-82a5a2c5ca99","root_ids":["1762"],"roots":{"1762":"64fa7e0a-8979-4536-bd0e-1c9d7efbfcf7"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
