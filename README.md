@@ -137,5 +137,19 @@ This Hive fact table contains processed metrics for `tweets`, `users`, `places`,
 
 The table includes counts for various metrics such as `weekend` and `weekday` tweet counts, `verified` and `protected` user counts, and counts for `high`, `middle`, and `low` popularity users. Additionally, the table includes counts for `photo` and `video` media, the number of distinct `cities` in which the tweet was posted, and a count of tweets with `limited replies` which have non-public reply settings.
 
+## Project Files:
+
+*The project includes 3 directories:*
+
+***1- Main_Project:*** 
+which houses the main project files.
+
+- `Twitter_Listener.py`: A Python script with functions that use Twitter API2 to retrieve streaming data from Twitter. The data is in JSON format and is sent via a TCP socket to the next stage. The data comprises tweets, users, places, and media information, as well as a list of hashtags extracted from each tweet and a batch ID used to identify each batch of data transferred.
+
+- `Spark_Streaming.py`: The spark job which responsible for collecting, cleaning, and processing data from the Twitter_Listener. The data is then loaded into the HDFS in a partitioned parquet format using Year, Month, Day, and Hour columns as partitions. This Spark job serves as an ETL engine between the listener and the HDFS. Lastly, the Spark job creates a Hive table containing all the raw parquet data.
+
+- `HiveDims.hql`: A Hive script with queries used for creating and inserting data into the Hive Dimensions tables.
+
+- `facts.py`: a SparkSQL script that uses Hive dimensions tables to create facts tables with meaningful metrics and generate business insights from the collected data. The script also contains the Bokeh code to create a real-time dashboard for visualizing the data.
 
 
