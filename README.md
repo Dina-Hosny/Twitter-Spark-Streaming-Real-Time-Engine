@@ -73,5 +73,13 @@ The extracted insights include:
 - "Distribution of media types by frequency of occurrence"
 - "Count of high, medium, and low popularity users"
 
+**Shell Script Coordinator:**
+
+To manage the project pipelines, a Shell script coordinator is utilized. The coordinator contains two Shell scripts to handle the different pipeline processes.
+
+The first Shell script runs once during machine startup and continues running in the background to ensure the streaming process is always active. It includes the Python Listener and Spark Streaming Job scripts.
+
+The second Bash script comprises the Hive Dimensions script, the Hive Facts, and the Dashboard script. This script is added to the Linux Cron Jobs file and runs every five minutes, ensuring that the data in the HDFS, Hive tables, and Dashboards are up-to-date.
+
 
 
