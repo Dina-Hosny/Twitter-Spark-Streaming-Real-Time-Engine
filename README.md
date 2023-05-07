@@ -158,6 +158,8 @@ which houses the main project files.
 
 - `Dashboard`: includes the `twitter_charts.html` file that displays real-time charts created using Bokeh.
 
+- `Requirements.txt`: a file that lists all the necessary packages and libraries needed to run the project.
+
 - `Cron_Scripts`: This directory contains Shell scripts that automate the entire pipeline using Linux Crontab. the `Crontab_Command.txt` file contains commands to run the `Data_Scripts.sh` every 5 minutes, which executes the HiveDims and Facts processes. Additionally, the directory includes `Streaming_Scripts.sh`, which runs the streaming jobs in the background, ensuring they remain up and running.
 
 ***2- Test_Files:*** 
