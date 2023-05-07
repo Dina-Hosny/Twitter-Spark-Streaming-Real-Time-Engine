@@ -117,5 +117,25 @@ This Hive dimension table contains information about the media uploaded in the t
 
 The table is partitioned by `year`, `month`, `day`, and `hour`.
 
+**Hive Fact Tables**
+
+- ***1- tweet_engagement_processed:***
+this Hive fact table contains processed engagement data for each tweet. It includes columns such as `tweet_id`, and columns for the number of `likes`, `retweets`, `replies`, `quotes`, and `impressions` the tweet received. Additionally, the table includes columns for the count of `hashtags` and `media` that were included in each tweet.
+
+This table is likely used to analyze tweet engagement and popularity over time.
+
+- ***2- user_activity_processed:***
+This Hive fact table contains information about the activity of users on Twitter, including the number of tweets, followers, and accounts they are following. The table has four columns: `user_id`, `tweet_count`, `followers_count`, `following_count`.
+
+- ***3- users_tweets_processed:***
+
+This hive fact table contains data related to tweets and their respective users. It has 4 columns, including `tweet_id`, `user_id`, `num_hashtags` indicating the number of hashtags that the user wrote, and `num_media` indicating the number of media files tweeted by the user.
+
+- ***4- totals_mertics_processed:***
+
+This Hive fact table contains processed metrics for `tweets`, `users`, `places`, and `media`. It represents some totals that may be needed in the different analyses.
+
+The table includes counts for various metrics such as `weekend` and `weekday` tweet counts, `verified` and `protected` user counts, and counts for `high`, `middle`, and `low` popularity users. Additionally, the table includes counts for `photo` and `video` media, the number of distinct `cities` in which the tweet was posted, and a count of tweets with `limited replies` which have non-public reply settings.
+
 
 
