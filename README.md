@@ -1,5 +1,5 @@
 
-# Twitter Streaming Real-Time Engine
+# Twitter Spark Streaming Real-Time Engine
 
 An Apache Spark streaming project that aims to collect, process, and analyze Twitter data in real-time with dashboard insights using various tools and frameworks like Python, Spark, HDFS, Hive, and Bokeh.
 
@@ -202,3 +202,7 @@ This directory includes files and Jupyter Notebooks that were used for testing d
 - Project can't get general tweets from Twitter. It can get tweets based on some keywords enforced by Twitter APIv2.
 - Project can get tweets which created in the last 7 days only enforced by Twitter APIv2.
 - The maximum result can be retrived with each batch is 100 enforced by Twitter APIv2.
+
+## Project Demo
+
+
