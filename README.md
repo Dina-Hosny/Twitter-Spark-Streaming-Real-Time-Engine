@@ -165,4 +165,35 @@ which houses the main project files.
 ***2- Test_Files:*** 
 This directory includes files and Jupyter Notebooks that were used for testing different parts of the project and verifying their outputs.
 
+## Running the Project
+
+**Pre-requests:**
+
+- 1- Make sure that the Java version is compatible with Pyspark.
+- 2- Clone the repository
+
+```bash
+  git clone https://github.com/Dina-Hosny/Twitter-Streaming-Real-Time-Engine.git
+```
+
+- 3- Navigate to the project directory
+
+```bash
+  cd Main_Project
+```
+
+- 4- install the needed packages and librariers
+
+```bash
+  pip install -r ./Requirements.txt
+```
+
+**Launch the project:**
+
+- 1- copy and paste commands into `Crontab_Command.txt` file to your crontab file system.
+- 2- run `Streaming_Scripts.sh` file
+```bash
+  sh Streaming_Scripts.sh
+```
+
 
