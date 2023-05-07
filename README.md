@@ -205,4 +205,20 @@ This directory includes files and Jupyter Notebooks that were used for testing d
 
 ## Project Demo
 
+https://user-images.githubusercontent.com/46838441/236680536-401e6b56-4e79-4dc4-a339-5cec5e0b0c78.mp4
+
+## Output Real-Time Dashboard
+
+![Real-Time Dashboard](https://user-images.githubusercontent.com/46838441/236680567-0651fe8a-f527-4535-9ef5-806aa5c5bd8e.gif)
+
+![1](https://user-images.githubusercontent.com/46838441/236680572-9dc5f4e5-aa21-4e04-98c9-b0d8e0bb3e5b.png)
+
+![2](https://user-images.githubusercontent.com/46838441/236680583-a384b8d8-9b58-4076-a1f0-375e5a3a2c4f.png)
+
+![3](https://user-images.githubusercontent.com/46838441/236680587-cf223eef-c3e2-4558-9d5b-46f7be676dc2.png)
+
+![4](https://user-images.githubusercontent.com/46838441/236680591-2b4883f0-7058-4a1c-b5ba-bc7778c4762f.png)
+
+![5](https://user-images.githubusercontent.com/46838441/236680595-73223719-149f-4829-9a8b-17ad26a8ff9d.png)
+
 
