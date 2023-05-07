@@ -152,4 +152,15 @@ which houses the main project files.
 
 - `facts.py`: a SparkSQL script that uses Hive dimensions tables to create facts tables with meaningful metrics and generate business insights from the collected data. The script also contains the Bokeh code to create a real-time dashboard for visualizing the data.
 
+- `Coordinator.sh`: A Shell script that automates the execution of all pipeline scripts. It ensures that the Python listener and the Spark Streaming Job are always running by sending them to the background. The HiveDims and Fact scripts are run every 5 minutes.
+
+    _It is important to note that the streaming scripts are stopped before running other scripts and restarted after they finish, as the machine cannot handle more than one Spark job at a time. However, this script is intended for testing purposes only and may not provide optimal performance._
+
+- `Dashboard`: includes the `twitter_charts.html` file that displays real-time charts created using Bokeh.
+
+- `Cron_Scripts`: This directory contains Shell scripts that automate the entire pipeline using Linux Crontab. the `Crontab_Command.txt` file contains commands to run the `Data_Scripts.sh` every 5 minutes, which executes the HiveDims and Facts processes. Additionally, the directory includes `Streaming_Scripts.sh`, which runs the streaming jobs in the background, ensuring they remain up and running.
+
+***2- Test_Files:*** 
+This directory includes files and Jupyter Notebooks that were used for testing different parts of the project and verifying their outputs.
+
 
