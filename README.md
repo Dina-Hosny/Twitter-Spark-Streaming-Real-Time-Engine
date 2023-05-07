@@ -209,7 +209,7 @@ https://user-images.githubusercontent.com/46838441/236680536-401e6b56-4e79-4dc4-
 
 ## Output Real-Time Dashboard
 
-![Real-Time Dashboard](https://user-images.githubusercontent.com/46838441/236680567-0651fe8a-f527-4535-9ef5-806aa5c5bd8e.gif)
+https://user-images.githubusercontent.com/46838441/236680693-1e77e456-eaf5-4063-8ee0-c20652d30cbd.mp4
 
 ![1](https://user-images.githubusercontent.com/46838441/236680572-9dc5f4e5-aa21-4e04-98c9-b0d8e0bb3e5b.png)
 
