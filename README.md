@@ -173,7 +173,7 @@ This directory includes files and Jupyter Notebooks that were used for testing d
 - 2- Clone the repository
 
 ```bash
-  git clone https://github.com/Dina-Hosny/Twitter-Streaming-Real-Time-Engine.git
+  git clone https://github.com/Dina-Hosny/Twitter-Spark-Streaming-Real-Time-Engine.git
 ```
 
 - 3- Navigate to the project directory
