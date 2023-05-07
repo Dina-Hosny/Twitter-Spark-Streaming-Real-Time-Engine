@@ -28,7 +28,7 @@ The stored data is then read into a Star Schema model that includes several Hive
 
 **1- Data Source System:**
 
-The Data Source System is the initial stage of the project pipeline. The system collects tweets, user information, and location data from Twitter's APIv2 by specifying relevant keywords.
+The Data Source System is the initial stage of the project pipeline. The system collects tweets, user information, and location data from Twitter's [APIv2](https://developer.twitter.com/en/docs/twitter-api/getting-started/make-your-first-request) by specifying relevant keywords.
 
 This process is executed by a Python listener script that fetches the latest tweets, along with the associated author and location data. In addition, media information and hashtags are also extracted from each tweet. The script is set to execute every five minutes, ensuring that the data collected is up-to-date and relevant.
 
@@ -196,4 +196,9 @@ This directory includes files and Jupyter Notebooks that were used for testing d
   sh Streaming_Scripts.sh
 ```
 
-
+## Limitations
+- Project can only streams 450 queries per 15 minutes [enforced by Twitter APIv2](https://developer.twitter.com/en/docs/twitter-api/tweets/search/api-reference/get-tweets-search-recent) .
+- Project can only streams 500K queries per month [enforced by twitter APIv2](https://developer.twitter.com/en/docs/twitter-api/rate-limits) .
+- Project can't get general tweets from Twitter. It can get tweets based on some keywords enforced by Twitter APIv2.
+- Project can get tweets which created in the last 7 days only enforced by Twitter APIv2.
+- The maximum result can be retrived with each batch is 100 enforced by Twitter APIv2.
